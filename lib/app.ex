@@ -4,7 +4,7 @@ defmodule App do
 
   def route("GET", [], conn) do
     IO.puts("GET /")
-    conn |> send_resp(200, Poison.encode!(%{mensagem: "Hello, world!"}))
+    conn |> send_resp(200, Poison.encode!(%{mensagem: "Hello, world! \n Moro's On =)"}))
   end
 
   def route("GET", ["hello", name], conn) do
